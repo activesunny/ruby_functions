@@ -5,10 +5,9 @@ class Equilibrium
       total_sum = arr.inject(0, :+)
 
       leftsum = 0
-      # for i, num in enumerate(arr)
       arr.each_with_index do |num, i|
           # total_sum is now right sum
-          # for index i
+          # for index num
           total_sum -= num
           if leftsum == total_sum
             return i
